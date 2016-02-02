@@ -1029,6 +1029,12 @@ section{
 	    margin-right: auto;
 	    background-image: url(../img/compare_medium.jpg);
 	}
+    .fp-product.fp-product-macbook .fp-product-column {
+        text-align: right;
+    }
+    .fp-product.fp-product-imac {
+        padding-top: 350px;
+    }
 }
 @media only screen and (max-width: 735px){
 	.fp-product.fp-product-imac {
