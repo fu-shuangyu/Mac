@@ -2,7 +2,7 @@
 	font-family:'Myriad Set Pro';
 	font-style:normal;
 	font-weight:100;
-	src:local('Myriad Set Pro'), url("../fonts/myriad-set-pro_text.woff") format("woff");
+	src:local('Myriad Set Pro'), url("../fonts/myriad-set-pro_thin.woff") format("woff");
 	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
 }
 article, aside, footer, header, nav, main, section, summary, details, hgroup, figure, figcaption {
@@ -22,6 +22,16 @@ ul,li,h1,h2,h3,h4,h5,h6,p{
 a{
 	color: black;
 	text-decoration: none;
+}
+h1, h2, h3, h4, h5, h6 {
+    margin: 0 0 0.45em 0;
+}
+
+p {
+    margin-bottom: 8px;
+}
+p {
+    margin: 0 0 1em 0;
 }
 /*导航栏目开始*/
 .title-nav{
@@ -259,6 +269,7 @@ a{
 .quanping{
 	background: #f2f2f2;
 	width: 100%;
+	margin-top: 30px;
 }
 #ac-footer{
 	font-size: 12px;
@@ -664,7 +675,7 @@ section{
     position: relative;
     z-index: 1;
     padding-top: 550px;
-    padding-bottom: 502px;
+    padding-bottom: 702px;
 }
 .row {
     position: relative;
@@ -681,9 +692,491 @@ section{
     content: ' ';
     display: table;
 }
+.column {
+    position: relative;
+    z-index: 1;
+    min-height: 2px;
+    margin: 0;
+    padding: 0;
+    float: left;
+}
+.fp-product-content {
+    text-align: center;
+}
+.fp-product .fp-product-content {
+    position: relative;
+}
+.fp-product.fp-product-imac .fp-product-content {
+    position: relative;
+    z-index: 10;
+    top: -340px;
+    left: 30px;
+}
+.fp-product-headline {
+    font-size: 72px;
+    line-height: 1.0556;
+    font-weight: 200;
+    letter-spacing: -0.024em;
+    margin-bottom: 0;
+}
+.fp-product-subheadline {
+    font-size: 42px;
+    line-height: 1.1429;
+    font-weight: 200;
+    letter-spacing: -0.01em;
+}
+.fp-moreblock {
+    font-size: 24px;
+    line-height: 1.3542;
+    font-weight: 200;
+    letter-spacing: normal;
+    line-height: 2.5em;
+}
+.fp-product-moreblock {
+    font-size: 24px;
+    line-height: 1.45;
+    font-weight: 400;
+    letter-spacing: normal;
+    margin-top: 0.625em;
+}
+.fp-moreblock .more {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #08c;
+}
+.fp-moreblock .more:hover {
+    text-decoration: underline;
+}
+.fp-product.fp-product-imac .image-imac {
+    background-repeat: no-repeat;
+    background-size: 987px 799px;
+    height: 799px;
+    width: 987px;
+    background-image: url(../img/hero_large.jpg);
+    z-index: -1;
+    position: absolute;
+    top: -266px;
+}
+.fp-product-accessories {
+    margin-bottom: 300px;
+}
+.fp-product-accessories .image-magic-accessories {
+    background-repeat: no-repeat;
+    background-size: 1661px 314px;
+    height: 314px;
+    width: 1661px;
+    background-image: url(../img/apple_accessories_large.jpg);
+    z-index: -1;
+    position: absolute;
+    left: -527px;
+    top: 15px;
+}
+.fp-product.fp-product-macbook {
+    padding-top: 515px;
+    padding-bottom: 375px;
+    position: relative;
+    z-index: 2;
+}
+.fp-product.fp-product-macbook .image-macbook {
+    background-repeat: no-repeat;
+    background-size: 674px 844px;
+    height: 844px;
+    width: 674px;
+    background-image: url(../img/macbook_large.jpg);
+    position: absolute;
+    left: -62px;
+    top: -315px;
+}
+.fp-product.fp-product-macbook .fp-product-column {
+    position: relative;
+    z-index: 15;
+    top: 25px;
+}
+.fp-product.fp-product-macbook-pro {
+    position: relative;
+    z-index: 1;
+    padding-top: 255px;
+    padding-bottom: 455px;
+}
+.fp-product.fp-product-macbook-pro .image-macbookpro {
+    background-repeat: no-repeat;
+    background-size: 979px 523px;
+    height: 523px;
+    width: 979px;
+    background-image: url(../img/mbpr_large.jpg);
+    position: absolute;
+    top: -103px;
+    left: 138px;
+}
+.fp-product.fp-product-macbook-air {
+    position: relative;
+    z-index: 1;
+    padding-top: 263px;
+    padding-bottom: 430px;
+    background: -webkit-linear-gradient(#fff, #fafafa);
+    background: linear-gradient(#fff, #fafafa);
+}
+.small-only {
+    display: none;
+}
+.fp-product.fp-product-macbook-air .image-macbookair {
+    background-repeat: no-repeat;
+    background-size: 927px 474px;
+    height: 474px;
+    width: 927px;
+    background-image: url(../img/mba_large.png);
+    position: absolute;
+    top: -115px;
+    left: -183px;
+}
+.fp-compare {
+    margin-top: 50px;
+    margin-bottom: 0;
+    text-align: center;
+    padding-bottom: 100px;
+}
+.fp-compare .fp-compare-image {
+    background-repeat: no-repeat;
+    background-size: 923px 435px;
+    height: 435px;
+    width: 923px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/compare_large.jpg);
+    margin-top: 40px;
+}
+.fp-compare .fp-secondary-headline {
+    margin-top: 0;
+    margin-bottom: 5px;
+}
+.more:after, .more .icon-htc {
+    top: 0;
+    padding-left: 0.3em;
+}
+.fp-compare .fp-compare-image {
+    background-repeat: no-repeat;
+    background-size: 923px 435px;
+    height: 435px;
+    width: 923px;
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../img/compare_large.jpg);
+    margin-top: 40px;
+}
+.desktop-only {
+    display: block;
+}
+.more{
+	color: #08c;
+}
+.more:hover{
+	text-decoration: underline;
+}
 /*主要内容结束*/
 
 /*响应式布局部分开始*/
+@media (min-width:1069px){
+	.large-centered {
+	    margin-left: auto;
+	    margin-right: auto;
+	    float: none;
+	}
+	.large-4 {
+	    width: 33.3333%;
+	}
+	.large-5 {
+	    width: 41.6667%;
+	}
+	.large-7 {
+	    width: 58.3333%;
+	}
+	.large-8 {
+	    width: 66.6667%;
+	}
+	.large-12 {
+	    width: 100%;
+	}
+	.large-offset-4 {
+	    margin-left: 33.3333%;
+	}
+	.large-offset-7 {
+	    margin-left: 58.3333%;
+	}
+}
+@media only screen and (max-width: 1068px){
+	.fp-product.fp-product-imac .fp-product-content {
+	    top: -180px;
+	    left: 25px;
+	}	
+	.medium-6 {
+	    width: 50%;
+	}
+	.medium-8 {
+	    width: 66.6667%;
+	}
+	.medium-9 {
+	    width: 75%;
+	}
+	.medium-12 {
+	    width: 100%;
+	}
+	.medium-offset-5 {
+	    margin-left: 41.6667%;
+	}
+	.fp-product {
+	    padding-bottom: 90px;
+	}
+	.fp-product.fp-product-macbook {
+	    padding-top: 420px;
+	    padding-bottom: 300px;
+	}
+	.fp-product-headline {
+	    font-size: 64px;
+	    line-height: 1.0625;
+	    font-weight: 200;
+	    letter-spacing: -0.02em;
+	}
+	.fp-product-subheadline {
+	    font-size: 32px;
+	    line-height: 1.125;
+	    font-weight: 200;
+	    letter-spacing: 0em;
+	}
+	.fp-moreblock {
+	    font-size: 18px;
+	    line-height: 1.45;
+	    font-weight: 400;
+	    letter-spacing: normal;
+	}
+	.fp-product.fp-product-imac .image-imac {
+	    top: -142px;
+	    left: 0;
+	}
+	.fp-product.fp-product-imac .image-imac {
+	    background-size: 723px 585px;
+	    height: 585px;
+	    width: 723px;
+	    background-image: url(../img/hero_medium.jpg);
+	}
+	.fp-product-accessories .image-magic-accessories {
+	    left: -175px;
+	    background-size: 979px 222px;
+	    height: 222px;
+	    width: 979px;
+	    background-image: url(../img/apple_accessories_medium.jpg);
+	}
+	.fp-product.fp-product-macbook .image-macbook {
+	    left: -22px;
+	    top: -220px;
+	    background-size: 524px 655px;
+	    height: 655px;
+	    width: 524px;
+	    background-image: url(../img/macbook_medium.jpg);
+	}
+	.fp-product.fp-product-macbook-pro {
+	    padding-top: 135px;
+	    padding-bottom: 105px;
+	}
+	.fp-section-content {
+	    width: 692px;
+	}
+	.fp-product.fp-product-macbook-pro .image-macbookpro {
+	    top: -93px;
+	    left: 68px;
+	    background-size: 712px 380px;
+	    height: 380px;
+	    width: 712px;
+	    background-image: url(../img/mbpr_medium.jpg);
+	}
+	.fp-product.fp-product-macbook-air {
+	    padding-top: 183px;
+	    padding-bottom: 145px;
+	    margin-top: 200px;
+	}
+	.fp-product.fp-product-macbook-air .image-macbookair {
+	    top: -135px;
+	    left: -120px;
+	    background-size: 643px 380px;
+	    height: 380px;
+	    width: 643px;
+	    background-image: url(../img/mba_medium.png);
+	}
+	.fp-compare {
+	    margin-top: 0;
+	}
+	.fp-compare .fp-compare-content {
+	    padding-bottom: 70px;
+	}
+	.fp-compare .fp-compare-content {
+	    padding-top: 90px;
+	    margin-top: 150px;
+	}
+	.fp-compare .fp-compare-image {
+	    margin-top: 62px;
+	    background-size: 611px 288px;
+	    height: 288px;
+	    width: 611px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    background-image: url(../img/compare_medium.jpg);
+	}
+	.fp-compare .fp-compare-image {
+	    margin-top: 62px;
+	    background-size: 611px 288px;
+	    height: 288px;
+	    width: 611px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    background-image: url(../img/compare_medium.jpg);
+	}
+}
+@media only screen and (max-width: 735px){
+	.fp-product.fp-product-imac {
+	    margin-top: 90px;
+	    padding-top: 0;
+	    padding-bottom: 70px;
+	}
+	.fp-section-content {
+	    width: 90%;
+	}
+	.fp-product.fp-product-imac .fp-product-content {
+	    top: 80px;
+	    left: 0;
+	    margin-bottom: 80px;
+	}
+	.fp-product-headline {
+	    font-size: 42px;
+	    line-height: 1.1429;
+	    font-weight: 200;
+	    letter-spacing: -0.01em;
+	}
+	.fp-product-subheadline {
+	    font-size: 28px;
+	    line-height: 1.1429;
+	    font-weight: 200;
+	    letter-spacing: 0em;
+	}
+	.fp-moreblock {
+	    font-size: 20px;
+	    line-height: 1.4;
+	    font-weight: 200;
+	    letter-spacing: normal;
+	}
+	.fp-product.fp-product-imac .image-imac {
+	    background-size: 439px 355px;
+	    height: 355px;
+	    width: 439px;
+	    background-image: url(../img/hero_small.jpg);
+	    position: static;
+	    margin-left: auto;
+        margin-right: auto;
+	}
+	.fp-product {
+	    padding-bottom: 60px;
+	}
+	.fp-moreblock {
+	    font-size: 18px;
+	    line-height: 1.45;
+	    font-weight: 400;
+	    letter-spacing: normal;
+	}
+	.fp-product-accessories .image-wrapper {
+	    position: relative;
+	    margin-left: auto;
+	    margin-right: auto;
+	    width: 288px;
+	}
+	.fp-product-accessories .image-magic-accessories {
+	    position: absolute;
+	    left: -200px;
+	    top: 25px;
+	    background-size: 580px 110px;
+	    height: 110px;
+	    width: 580px;
+	    background-image: url(../img/apple_accessories_small.jpg);
+	}
+	.fp-product.fp-product-macbook {
+	    padding-top: 120px;
+	    padding-bottom: 0;
+	}
+	.fp-product.fp-product-macbook .image-macbook {
+	    position: static;
+	    margin-top: 50px;
+	    margin-left: auto;
+	    margin-right: auto;
+	    background-size: 353px 442px;
+	    height: 442px;
+	    width: 353px;
+	    background-image: url(../img/macbook_small.jpg);
+	}
+	.fp-product.fp-product-macbook-pro {
+	    padding-top: 57px;
+	    padding-bottom: 0;
+	}
+	.fp-product.fp-product-macbook-pro .image-macbookpro {
+	    position: static;
+	    margin: 150px auto 0;
+	    background-size: 322px 172px;
+	    height: 172px;
+	    width: 322px;
+	    background-image: url(../img/mbpr_small.jpg);
+	}
+	.fp-product.fp-product-macbook-air {
+	    padding-top: 70px;
+	    padding-bottom: 0px;
+	    margin-top: 0;
+	}
+	.fp-product.fp-product-macbook-air .image-macbookair {
+	    position: static;
+	    margin: 150px auto 0;
+	    background-size: 303px 156px;
+	    height: 156px;
+	    width: 303px;
+	    background-image: url(../img/mba_small.png);
+	}
+	.fp-compare {
+	    margin-top: -180px;
+	    border-bottom: 1px #d6d6d6 solid;
+	    padding-bottom: 0px;
+	}
+	.fp-compare .fp-section-content {
+	    border: none;
+	}
+	.fp-compare .fp-compare-content {
+	    padding-bottom: 45px;
+	}
+	.fp-compare .fp-compare-image {
+	    margin-top: 0px;
+	    background-size: 315px 150px;
+	    height: 150px;
+	    width: 111.1111%;
+	    margin-left: -5.5556%;
+	    margin-right: -5.5556%;
+	    background-position: center top;
+	    background-image: url(../img/compare_small.jpg);
+	}
+	.fp-product-accessories {
+	     margin-bottom: 0px; 
+	}
+	.fp-secondary-headline + a.more{
+		margin-bottom: 20px;
+		display: block;
+	}
+	.small-centered {
+	    margin-left: auto;
+	    margin-right: auto;
+	    float: none;
+	}
+	.small-12 {
+	    width: 100%;
+	}
+	.small-offset-0 {
+	    margin-left: 0;
+	}
+	.large-4:{
+		width: 0;
+		}
+}
 @media only screen and (orientation: landscape){
 	.ac-browser-items, .ac-familybrowser-items {
 	    padding-bottom: 49px;
